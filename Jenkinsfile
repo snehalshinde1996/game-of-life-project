@@ -2,7 +2,6 @@ pipeline {
 	agent {
 		label {
 			label "slave1"
-			customWorkspace "/opt/assignment1"
 		}
 	}
 	stages {
