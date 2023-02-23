@@ -14,9 +14,9 @@ pipeline {
 		stage ("build maven project") {
 			steps {
 			    sh "export PATH=$PATH:/opt/apache-maven-3.9.0/bin"
-			sh "git clone https://github.com/ketank185/game-of-life_maven_project.git"
-			sh "cd /opt/assignment1/game-of-life_maven_project/" 
-			sh "mvn package"
+			sh "sudo git clone https://github.com/ketank185/game-of-life_maven_project.git"
+			sh "sudo cd /opt/assignment1/game-of-life_maven_project/" 
+			sh "sudo mvn package"
 		}
 		}
 			}
