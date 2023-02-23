@@ -5,9 +5,10 @@ pipeline {
 		}
 	}
 	stages {
-		stage("clean workspace"){
+		stage("clean workspace") {
             steps{
-                sh "sudo rm -rf /opt/jenkins-slave/workspace/assignment1(22.02.23)/*"
+                //sh "sudo rm -rf /opt/jenkins-slave/workspace/assignment1(22.02.23)/*"
+		    cleanWs ()
             }
             
         }
