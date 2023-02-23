@@ -6,10 +6,9 @@ pipeline {
 		}
 	}
 	stages {
-		stage ("clean workspace"){
-			steps {
-			cleanWs()
-			}
+		stage('CleanWorkspace') {
+            steps {
+                cleanWs()
 		}
 		stage ("build maven project") {
 			steps {
