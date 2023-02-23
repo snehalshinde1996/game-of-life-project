@@ -13,12 +13,9 @@ pipeline {
 		}
 		stage ("build maven project") {
 			steps {
-			sh "export PATH=$PATH:/opt/apache-maven-3.9.0/bin/"
+			    sh "export PATH=$PATH:/opt/apache-maven-3.9.0/bin"
 			sh "mvn package"
 		}
 		}
-		/* stage ("delpoying of project") {
-			sh "cp /opt/assignment1/ "
-		} */
-}
+			}
 }
