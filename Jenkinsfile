@@ -1,4 +1,5 @@
-pipeline {
+
+      pipeline {
 	agent {
 	  label {
         label ("built-in") {
@@ -27,7 +28,7 @@ pipeline {
        }
          stage ("copy war file to slave") {
          steps {
-          sh 'scp-i "jenkins.pem" /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife
+          sh 'scp-i "jenkins.pem" /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife'
     
       }
        }
@@ -35,8 +36,6 @@ pipeline {
 
      
 
-        }
-       }
-	}
-}
+        
+    }
 }
