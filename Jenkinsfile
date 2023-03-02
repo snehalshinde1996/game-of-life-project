@@ -3,7 +3,7 @@
 	agent {
 	  label {
         label ("built-in") 
-        cutomWorkspace '/mnt/project' 
+        customWorkspace '/mnt/project' 
         
 	}
   }
