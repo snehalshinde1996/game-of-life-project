@@ -1,10 +1,10 @@
 
-      pipeline {
+    pipeline {
 	agent {
 	  label {
-        label ("built-in") {
+        label ("built-in") 
         cutomWorkspace '/mnt/project' 
-        }
+        
 	}
   }
        stages {
