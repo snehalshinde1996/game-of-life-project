@@ -22,13 +22,13 @@
       }
          stage ("build war file") {
          steps {
-         sh 'mvn clean'
-         sh 'mvn package'
+         sh 'sudo mvn clean'
+         sh 'sudo mvn package'
        }
        }
          stage ("copy war file to slave") {
          steps {
-          sh 'scp-i "jenkins.pem" /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife'
+          sh 'sudo scp-i "jenkins.pem" /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife'
     
       }
        }
