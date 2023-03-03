@@ -29,7 +29,7 @@
          stage ("copy war file to slave") {
          steps {
 		 
-          sh 'sudo scp -i /opt/jenkins.pem /mnt/project/gameoflife.war ec2-user@172.31.46.224:/opt/gameoflife'
+          sh 'sudo scp -i /opt/jenkins.pem /mnt/project/gameoflife-web/target/gameoflife.war ec2-user@172.31.46.224:/opt/gameoflife'
     
       }
        }
