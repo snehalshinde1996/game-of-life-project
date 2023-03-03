@@ -29,7 +29,7 @@
          stage ("copy war file to slave") {
          steps {
 		 
-          sh 'sudo scp -o StrictHostKeyChecking=no /opt/jenkins.pem /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife'
+          sh 'sudo scp -o StrictHostKeyChecking=no /opt/jenkins.pem /mnt/project/gameoflife.war ec2-user@172.31.46.224:/opt/gameoflife'
     
       }
        }
