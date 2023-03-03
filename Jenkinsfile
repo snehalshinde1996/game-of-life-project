@@ -28,7 +28,7 @@
        }
          stage ("copy war file to slave") {
          steps {
-          sh 'sudo scp -i "jenkins.pem" /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife'
+          sh 'sudo scp -i /opt/jenkins.pem /mnt/project/gameoflife.war ec2-user@13.127.51.148:/opt/gameoflife'
     
       }
        }
